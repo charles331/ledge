@@ -1,0 +1,8 @@
+# Throwaway (Ledge lot 8a, R9): fails on purpose so that « relancer » can be tried. Not to be merged.
+name: ledge-r9-trial
+on: pull_request
+jobs:
+  fails:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "ledge R9 trial, failing on purpose" && exit 1
